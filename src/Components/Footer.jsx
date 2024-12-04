@@ -10,11 +10,11 @@ export default class Footer extends Component {
                 <div className='w-12 xl:w-34'><img src={Logo} alt="logo" /></div>
                 </a>
                 <div class="flex flex-wrap items-center justify-center gap-4 mt-6 lg:gap-6 lg:mt-0">
-                    <div className='text-white hover:text-lime-500'>Home</div>
-                    <div className='text-white hover:text-lime-500'>About</div>
-                    <div className='text-white hover:text-lime-500'>Portfolio</div>
-                    <div className='text-white hover:text-lime-500'>Skills</div>
-                    <div className='text-white hover:text-lime-500'>Contact</div>
+                    <a href="./"><div className='text-white hover:text-lime-500'>Home</div></a>
+                    <a href="#about"><div className='text-white hover:text-lime-500'>About</div></a>
+                    <a href="#portfolio"><div className='text-white hover:text-lime-500'>Portfolio</div></a>
+                    <a href="#skills"><div className='text-white hover:text-lime-500'>Skills</div></a>
+                    <a href="#contact"><div className='text-white hover:text-lime-500'>Contact</div></a>
                 </div>
         
                 <p class="mt-6 text-ls text-lime-500 lg:mt-0 tracking-wide">© Copyright 2024 Delis Tech. </p>
@@ -23,3 +23,8 @@ export default class Footer extends Component {
     )
   }
 }
+
+
+
+
+
