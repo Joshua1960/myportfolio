@@ -22,7 +22,7 @@ export default class About extends Component {
               viewport={{once: false, amount: 0.7}}
             >
               <h2 className="text-neutral-200 text-lg font-normal tracking-wider text-start">About me</h2>
-              <p className="flex flex-col text-white text-3xl sl:text-4xl md:text-4xl lg:text-5xl font-medium text-start gap-1">Professional <span className='text-lime-500'>Problem solution</span> for digital product</p>
+              <p className="flex flex-col text-white text-3xl sl:text-4xl md:text-4xl lg:text-5xl font-semibold text-start gap-1">Professional <span className='text-lime-500'>Problem solution</span> for digital product</p>
               <p className="text-gray-300 mt-6 text-start leading-7 tracking-wide">Dedicated to crafting visually stunning, intuitive digital experiences that combine seamless functionality with cutting-edge design. Committed to pushing boundaries and delivering impactful solutions that leave a lasting impression on users.</p>
             </motion.div>
             <motion.div
