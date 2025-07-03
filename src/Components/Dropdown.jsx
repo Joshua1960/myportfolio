@@ -28,6 +28,7 @@ const Dropdown = () => {
                     <a href="#portfolio"><div className='block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white'>Portfolio</div></a>
                     <a href="#skills"><div className='block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white'>Skills</div></a>
                     <a href="#contact"><div className='block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white'>Contact</div></a>
+                    <button className='flex font-Montserrat flex-col items-center text-white bg-maincolour px-5 py-2' type="button">Lets talk</button>
                 </div>
             )}
         </div>
