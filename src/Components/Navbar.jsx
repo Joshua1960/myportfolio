@@ -5,7 +5,7 @@ import Dropdown from './Dropdown';
 const Navbar = () => {
   return (
     <nav className="font-main bg-black fixed w-full z-50">
-      <div className="px-6 md:px-12 lg:px-20 py-6 flex justify-between items-center overflow-x-hidden">
+      <div className="px-10 lg:px-30 md:px-20 py-6 flex justify-between items-center w-full">
         
         {/* Logo */}
         <div className="w-10 sm:w-14">
@@ -20,9 +20,9 @@ const Navbar = () => {
           <a href="#skills" className="hover:text-yellow-500">Skills</a>
           <a href="#contact" className="hover:text-yellow-500">Contact</a>
           <a href="https://wa.link/jyk08s">
-            <button className="bg-yellow-400 text-md cursor-pointer hover:text-black text-black px-6 py-2 rounded-md transition hover:scale-105 duration-300 flex items-center gap-2">
-              Let's talk
-            </button>
+              <button className="bg-yellow-gradient text-md cursor-pointer hover:text-black text-black white px-6 py-2 rounded-md transition hover:scale-105 duration-300 flex items-center gap-2">
+                Let's talk
+              </button>
           </a>
         </div>
 
