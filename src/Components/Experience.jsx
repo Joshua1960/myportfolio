@@ -8,11 +8,11 @@ const experienceData = [
     label: 'Years Experience',
   },
   {
-    number: '25+',
+    number: '14+',
     label: 'Completed Projects',
   },
   {
-    number: '10+',
+    number: '8+',
     label: 'Technologies Mastered',
   },
 ];
