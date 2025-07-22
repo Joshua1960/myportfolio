@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="font-main bg-neutral-950 px-10 lg:px-30 pt-24 pb-20 lg:pt-36 lg:pb-36 w-full"
+      className="font-main bg-neutral-950 px-10 lg:px-16 py-24 lg:pt-36 lg:pb-36 w-full overflow-hidden"
     >
       <div className="max-w-7xl mx-auto grid gap-12 md:grid-cols-2 items-center">
         {/* Left Side */}
@@ -64,7 +64,7 @@ export default function Contact() {
 
         {/* Right Side (Form) */}
         <form
-          className="bg-black bg-opacity-60 p-8 rounded-xl shadow-lg md:w-lg w-full"
+          className="bg-black bg-opacity-60 p-8 rounded-xl shadow-lg w-full"
           onSubmit={(e) => e.preventDefault()}
         >
           <h2 className="text-white text-2xl font-semibold mb-6">Send a Message</h2>
