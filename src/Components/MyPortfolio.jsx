@@ -35,7 +35,7 @@ const MyPortfolio = () => {
   return (
     <section
       id="portfolio"
-      className="bg-black text-white font-main px-10 lg:px-30 pt-24 pb-20 md:px-20 lg:pt-36 lg:pb-36 tracking-wide">
+      className="bg-black text-white font-main px-10 lg:px-30 pt-24 pb-20 md:px-20 lg:pt-36 lg:pb-36 tracking-wide w-full">
       <div className="mb-15 text-left gap-4 flex flex-col">
         <hr className="border-t-4 border-yellow-500 w-14" />
         <h2 className="font-semibold text-3xl sm:text-4xl lg:text-5xl text-white">

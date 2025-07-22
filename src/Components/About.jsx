@@ -11,7 +11,7 @@ export default class About extends Component {
     return (
       <section
         id="about"
-        className="px-10 lg:px-30 tracking-wide font-main bg-black flex flex-col md:flex-row gap-10 items-center pt-24 pb-20 md:px-20 lg:pt-36 lg:pb-36"
+        className="w-full px-10 lg:px-30 tracking-wide font-main bg-black flex flex-col md:flex-row gap-10 items-center pt-24 pb-20 md:px-20 lg:pt-36 lg:pb-36"
       >
         {/* Left text content */}
         <div className="flex-1 flex flex-col justify-between max-w-3xl">

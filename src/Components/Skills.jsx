@@ -24,7 +24,7 @@ const skillData = [
 
 const Skills = () => {
   return (
-    <section id='skills' className='font-main px-10 lg:px-30 pt-24 pb-20 md:px-20 lg:pt-36 lg:pb-36 bg-neutral-950 tracking-wide content-center'>
+    <section id='skills' className='w-full font-main px-10 lg:px-30 pt-24 pb-20 md:px-20 lg:pt-36 lg:pb-36 bg-neutral-950 tracking-wide content-center'>
       <div className="max-w-screen-xl mx-auto">
         <div className="grid grid-cols-1 gap-y-12 lg:grid-cols-2 lg:gap-x-16 items-center">
           

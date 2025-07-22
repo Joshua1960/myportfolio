@@ -27,7 +27,7 @@ export default function TestimonialSection() {
   const testimonial = testimonials[activeIndex];
 
   return (
-    <div className="bg-slate-950 px-10 lg:px-30 pt-24 pb-20 md:px-20 lg:pt-36 lg:pb-36 font-main">
+    <div className="bg-slate-950 px-10 lg:px-30 pt-24 pb-20 md:px-20 lg:pt-36 lg:pb-36 font-main w-full">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl text-white font-semibold mb-10">
           Testimonials

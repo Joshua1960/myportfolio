@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="font-main bg-neutral-950 px-10 lg:px-30 pt-24 pb-20 lg:pt-36 lg:pb-36"
+      className="font-main bg-neutral-950 px-10 lg:px-30 pt-24 pb-20 lg:pt-36 lg:pb-36 w-full"
     >
       <div className="max-w-7xl mx-auto grid gap-12 md:grid-cols-2 items-center">
         {/* Left Side */}

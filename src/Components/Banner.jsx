@@ -10,7 +10,7 @@ export default class Banner extends Component {
     return (
       <div
         id="banner"
-        className="bg-black relative text-white font-main overflow-hidden min-h-screen content-center"
+        className="w-full bg-black relative text-white font-main overflow-hidden content-center"
       >
         {/* Background image */}
         <img
@@ -19,7 +19,7 @@ export default class Banner extends Component {
           className={`
             absolute bottom-0
             left-1/2 transform -translate-x-1/2
-            h-auto md:h-full 
+            h-auto 
             object-contain
             opacity-80 md:opacity-100
             pointer-events-none
