@@ -5,7 +5,7 @@ import Dropdown from './Dropdown';
 const Navbar = () => {
   return (
     <nav className="font-main bg-black fixed w-full z-50">
-      <div className="px-10 lg:px-30 md:px-20 py-6 flex justify-between items-center w-full">
+      <div className="px-10 lg:px-30 md:px-20 py-6 flex justify-between items-center">
         
         {/* Logo */}
         <div className="w-10 sm:w-14">
