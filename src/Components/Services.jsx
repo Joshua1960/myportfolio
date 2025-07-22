@@ -161,18 +161,3 @@
 //   );
 // }
 
-
-<div className="space-y-4">
-            <div className="flex items-center space-x-4">
-              <FontAwesomeIcon icon={faEnvelope} className="text-yellow-400 w-6 h-6" />
-              <span className="text-white text-lg">Joeljoshua1960@gmail.com</span>
-            </div>
-            <div className="flex items-center space-x-4">
-              <FontAwesomeIcon icon={faPhone} className="text-yellow-400 w-6 h-6" />
-              <span className="text-white text-lg">+123 456 7890</span>
-            </div>
-            <div className="flex items-center space-x-4">
-              <FontAwesomeIcon icon={faLocationDot} className="text-yellow-400 w-6 h-6" />
-              <span className="text-white text-lg">Lagos, Nigeria</span>
-            </div>
-          </div>
