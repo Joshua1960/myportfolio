@@ -44,7 +44,7 @@ export default class Banner extends Component {
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-4">
               <a href="https://wa.link/jyk08s">
-                <button className="bg-yellow-gradient cursor-pointer text-black white px-8 py-3 rounded-md transition hover:scale-105 duration-300 flex items-center gap-2">
+                <button className="bg-yellow-500 cursor-pointer text-black white px-8 py-3 rounded-md transition hover:scale-105 duration-300 flex items-center gap-2">
                   Hire me <FontAwesomeIcon icon={faAngleRight} />
                 </button>
               </a>
