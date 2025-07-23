@@ -18,7 +18,7 @@ const projects = [
   {
     image: Project2,
     category: 'NGO Website',
-    name: 'Real Estate Dashboard',
+    name: 'BALL Africa Website  ',
     description: "Building & Mentoring Africa's new community of Sports professionals and social impact leaders.",
     link: 'https://ballafrica.org/',
   },

@@ -1,5 +1,5 @@
-import { motion, AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion'; 
+import { useState, useEffect } from 'react';
 
 const testimonials = [
   {
@@ -25,6 +25,15 @@ const testimonials = [
 export default function TestimonialSection() {
   const [activeIndex, setActiveIndex] = useState(0);
   const testimonial = testimonials[activeIndex];
+
+  // Change testimonial every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    }, 5000); // 5000ms = 5 seconds
+
+    return () => clearInterval(interval); // Clean up on unmount
+  }, []);
 
   return (
     <div className="bg-slate-950 px-10 lg:px-30 pt-24 pb-20 md:px-20 lg:pt-36 lg:pb-36 font-main w-full">
