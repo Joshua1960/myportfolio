@@ -19,7 +19,7 @@ export default class Banner extends Component {
           className={`
             absolute bottom-0
             left-1/2 transform -translate-x-1/2
-            h-5/6 
+            h-5/6
             object-contain
             opacity-80 md:opacity-100
             pointer-events-none
