@@ -77,7 +77,7 @@ export const Hero = () => {
         className="absolute bottom-1/4 left-[5%] w-72 h-72 bg-blue-500/10 rounded-full blur-3xl -z-10"
       />
 
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-6 md:px-12 pt-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <motion.div

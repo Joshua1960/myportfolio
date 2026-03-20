@@ -82,7 +82,7 @@ export const Contact = () => {
                     </p>
                     <a
                       href="tel:+2348159268174"
-                      className="text-lg font-semibold hover:text-primary transition-colors"
+                      className="text-md font-semibold hover:text-primary transition-colors"
                     >
                       +234 8159268174
                     </a>
@@ -99,7 +99,7 @@ export const Contact = () => {
                     </p>
                     <a
                       href="mailto:joeljoshua250@gmail.com"
-                      className="text-lg font-semibold hover:text-primary transition-colors break-all"
+                      className="text-md font-semibold hover:text-primary transition-colors break-all"
                     >
                       joeljoshua250@gmail.com
                     </a>
@@ -114,7 +114,7 @@ export const Contact = () => {
                     <p className="text-sm text-foreground/60 font-medium">
                       Location
                     </p>
-                    <p className="text-lg font-semibold">Lagos, Nigeria</p>
+                    <p className="text-md font-semibold">Lagos, Nigeria</p>
                   </div>
                 </div>
               </div>
