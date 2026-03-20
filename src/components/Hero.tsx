@@ -128,7 +128,8 @@ export const Hero = () => {
                 Hire Me <ArrowRight size={18} />
               </a>
               <a
-                href="/resume.pdf"
+                href="../assets/Joshua_Joel_CV.pdf"
+                download="Joshua_Joel_CV.pdf"
                 className="glass border border-border px-8 py-4 rounded-full font-medium flex items-center gap-2 hover:bg-card/80 transition-all hover:scale-105 active:scale-95"
               >
                 Download CV <Download size={18} />
