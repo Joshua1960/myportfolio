@@ -79,7 +79,7 @@ export const Skills = () => {
                     delay: 0.5 + i * 0.1,
                     ease: "easeOut",
                   }}
-                  className="h-full bg-gradient-to-r from-primary to-orange-500 rounded-full relative"
+                  className="h-full bg-linear-to-r from-primary to-orange-500 rounded-full relative"
                 >
                   <div className="absolute top-0 right-0 bottom-0 w-10 bg-white/20 blur-[2px] -skew-x-12 animate-pulse"></div>
                 </motion.div>

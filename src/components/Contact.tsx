@@ -15,8 +15,8 @@ export const Contact = () => {
   return (
     <section id="contact" className="py-24 relative overflow-hidden font-main">
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] -z-10"></div>
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[100px] -z-10"></div>
+      <div className="absolute top-0 right-0 w-125 h-125 bg-primary/5 rounded-full blur-[100px] -z-10"></div>
+      <div className="absolute bottom-0 left-0 w-125 h-125 bg-blue-500/5 rounded-full blur-[100px] -z-10"></div>
 
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center max-w-2xl mx-auto mb-16">
@@ -65,7 +65,7 @@ export const Contact = () => {
             transition={{ duration: 0.6 }}
             className="lg:col-span-2 flex flex-col gap-8"
           >
-            <div className="glass p-8 rounded-[2rem] border border-border/50 h-full flex flex-col justify-center gap-8 shadow-xl">
+            <div className="glass p-8 rounded-4xl border border-border/50 h-full flex flex-col justify-center gap-8 shadow-xl">
               <h3 className="text-2xl font-bold mb-2">Contact Information</h3>
               <p className="text-foreground/70 mb-4">
                 Fill out the form and I will get back to you within 24 hours.
@@ -169,7 +169,7 @@ export const Contact = () => {
             className="lg:col-span-3"
           >
             <form
-              className="glass p-8 md:p-10 rounded-[2rem] border border-border/50 shadow-xl flex flex-col gap-6"
+              className="glass p-8 md:p-10 rounded-4xl border border-border/50 shadow-xl flex flex-col gap-6"
               onSubmit={(e) => e.preventDefault()}
             >
               <div className="grid md:grid-cols-2 gap-6">

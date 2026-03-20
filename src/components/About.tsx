@@ -56,7 +56,7 @@ export const About = () => {
                   transition={{ duration: 0.4, delay: i * 0.1 }}
                   className="glass p-4 rounded-xl flex items-center gap-3 hover:bg-card/80 transition-colors border border-border/50 group"
                 >
-                  <CheckCircle2 className="text-primary flex-shrink-0 group-hover:scale-110 transition-transform" />
+                  <CheckCircle2 className="text-primary shrink-0 group-hover:scale-110 transition-transform" />
                   <span className="font-medium">{service}</span>
                 </motion.div>
               ))}
@@ -109,7 +109,7 @@ export const About = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: false }}
             transition={{ duration: 0.7 }}
-            className="relative h-full min-h-[400px] rounded-[2rem] overflow-hidden glass border border-border/50 p-8 flex flex-col justify-center"
+            className="relative h-full min-h-100 rounded-4xl overflow-hidden glass border border-border/50 p-8 flex flex-col justify-center"
           >
             <div className="absolute -right-20 -top-20 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
             <div className="absolute -left-20 -bottom-20 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl"></div>
