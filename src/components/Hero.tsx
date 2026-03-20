@@ -169,14 +169,14 @@ export const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative lg:h-[600px] flex justify-center items-end"
+            className="relative lg:h-150 flex justify-center items-end"
           >
             <div className="relative w-full max-w-lg flex justify-center items-end">
-              <div className="absolute bottom-0 w-[90%] h-[70%] bg-gradient-to-t from-primary/20 to-transparent rounded-[2rem] -z-10 blur-xl mix-blend-overlay"></div>
+              <div className="absolute bottom-0 w-[90%] h-[70%] bg-linear-to-t from-primary/20 to-transparent rounded-4xl -z-10 blur-xl mix-blend-overlay"></div>
               <img
                 src={Joshua}
                 alt="Joshua Joel"
-                className="w-full h-auto object-contain max-h-[600px] filter drop-shadow-2xl"
+                className="w-full h-auto object-contain max-h-150 filter drop-shadow-2xl"
               />
 
               {/* Floating badges */}
