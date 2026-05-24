@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import Project1 from "../assets/img/project1.jpg";
-import Project2 from "../assets/img/project2.png";
+import Project4 from "../assets/img/tsagold.png";
 import Project3 from "../assets/img/project3.jpg";
 import Project5 from "../assets/img/project5.jpg";
 
@@ -15,6 +15,17 @@ export const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: "T & S Agro Limited Website",
+      category: "Business",
+      image: Project4,
+      description:
+        "T & S Agro Limited is a fast-growing agro-commodity supply company in Nigeria, dedicated to delivering superior-quality products through excellence and reliability.",
+      tags: ["Wordpress", "Elementor", "Figma"],
+      link: "https://www.tsagroltd.com/",
+      github: "https://www.tsagroltd.com/",
+    },
+    {
+      id: 2,
       title: "Megawatts Productions Website",
       category: "Business",
       image: Project1,
@@ -25,10 +36,10 @@ export const Projects = () => {
       github: "https://megawattsgroup.com/",
     },
     {
-      id: 2,
+      id: 3,
       title: "CoSpace App",
       category: "SAAS",
-      image: Project2,
+      image: Project3,
       description:
         "A collaborative workspace management tool that allows teams to book and manage shared collaborative boards and resources in real-time.",
       tags: ["ReactJS", "WebSockets", "Node.js"],
@@ -36,7 +47,7 @@ export const Projects = () => {
       github: "https://github.com/co-space",
     },
     {
-      id: 3,
+      id: 4,
       title: "BALL Africa Website",
       category: "Corporate",
       image: Project5,
@@ -45,17 +56,6 @@ export const Projects = () => {
       tags: ["Wordpress", "Elementor", "Figma"],
       link: "https://ballafrica.org/",
       github: "https://ballafrica.org/",
-    },
-    {
-      id: 4,
-      title: "Plumule Advisory",
-      category: "Corporate",
-      image: Project3,
-      description:
-        "Plumule Advisory is an early-stage investment consulting company that guides and provides entrepreneurs with all they need to be investment ready.",
-      tags: ["Wordpress", "Elementor", "Figma"],
-      link: "http://plumuleadvisory.com/",
-      github: "http://plumuleadvisory.com/",
     },
   ];
 
@@ -145,6 +145,8 @@ export const Projects = () => {
                   <img
                     src={project.image}
                     alt={project.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
 
@@ -206,13 +208,13 @@ export const Projects = () => {
           viewport={{ once: false }}
           className="mt-16 text-center"
         >
-          <Link
+          {/* <Link
             to="/projects"
             className="inline-flex items-center gap-2 text-primary font-medium hover:gap-4 transition-all duration-300 group"
           >
             View All Projects
             <ArrowUpRight className="group-hover:rotate-45 transition-transform duration-300" />
-          </Link>
+          </Link> */}
         </motion.div>
       </div>
     </section>

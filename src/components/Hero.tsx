@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import gsap from "gsap";
 import { Download, ArrowRight, Github, Linkedin, Twitter } from "lucide-react";
 import Joshua from "../assets/img/Joshua.png";
 
@@ -15,31 +14,7 @@ export const Hero = () => {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
-  useEffect(() => {
-    // GSAP text reveal animation
-    if (textRef.current) {
-      const chars = textRef.current.innerText.split("");
-      textRef.current.innerText = "";
-
-      chars.forEach((char) => {
-        const span = document.createElement("span");
-        span.innerText = char === " " ? "\u00A0" : char;
-        span.style.display = "inline-block";
-        span.style.opacity = "0";
-        span.style.transform = "translateY(20px)";
-        textRef.current?.appendChild(span);
-      });
-
-      gsap.to(textRef.current.children, {
-        opacity: 1,
-        y: 0,
-        duration: 0.8,
-        stagger: 0.05,
-        ease: "power3.out",
-        delay: 0.2,
-      });
-    }
-  }, []);
+  // Keep heading animations simple and driven by Framer Motion
 
   return (
     <section
@@ -48,7 +23,7 @@ export const Hero = () => {
       className="relative min-h-screen flex items-center pt-20 overflow-hidden"
     >
       {/* Background Elements */}
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/20 via-background to-background"></div>
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,var(--tw-gradient-stops))] from-primary/20 via-background to-background"></div>
 
       {/* Animated shapes */}
       <motion.div
@@ -96,12 +71,15 @@ export const Hero = () => {
               </p>
             </motion.div>
 
-            <h1
+            <motion.h1
               ref={textRef}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
               className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight font-main"
             >
               Joshua Joel
-            </h1>
+            </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -150,13 +128,13 @@ export const Hero = () => {
                 <Github size={24} />
               </a>
               <a
-                href="#"
+                href="https://x.com/OgahJosh"
                 className="text-foreground/60 hover:text-primary transition-colors hover:-translate-y-1 transform duration-300"
               >
                 <Linkedin size={24} />
               </a>
               <a
-                href="#"
+                href="https://x.com/OgahJosh"
                 className="text-foreground/60 hover:text-primary transition-colors hover:-translate-y-1 transform duration-300"
               >
                 <Twitter size={24} />
@@ -176,6 +154,7 @@ export const Hero = () => {
               <img
                 src={Joshua}
                 alt="Joshua Joel"
+                decoding="async"
                 className="w-full h-auto object-contain max-h-150 filter drop-shadow-2xl"
               />
 

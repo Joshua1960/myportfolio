@@ -48,7 +48,7 @@ export const Testimonials = () => {
 
   return (
     <section className="font-main py-24 relative overflow-hidden bg-card/30">
-      <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent -z-10"></div>
+      <div className="absolute top-1/2 left-0 w-full h-px bg-linear-to-r from-transparent via-primary/20 to-transparent -z-10"></div>
 
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center max-w-2xl mx-auto mb-16">
@@ -82,7 +82,7 @@ export const Testimonials = () => {
             <Quote size={120} />
           </div>
 
-          <div className="glass p-8 md:p-12 rounded-[2rem] border border-border/50 relative z-10 shadow-2xl">
+          <div className="glass p-8 md:p-12 rounded-4xl border border-border/50 relative z-10 shadow-2xl">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentIndex}
